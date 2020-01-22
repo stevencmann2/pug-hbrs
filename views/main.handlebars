@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+         <link rel='shortcut icon', href='//cdn2.auth0.com/styleguide/latest/lib/logos/img/favicon.png'>
+		<title>PassPort Home</title>
+      
+	</head>
+	<body>
+        <h1> Auth0 - Node js</h1>
+        <br>
+
+         <a href ="/">
+            <h1>Home</h1>
+        </a>
+
+    {{#if locals.user}}
+        <a href="/user" id="profileDropDown">
+            <h1> 
+             Profile
+            </h1>
+        </a>
+
+    <br>
+
+        <a href="/logout" id="qsLogoutBtn">
+            <h1> 
+            Logout
+            </h1>
+        </a>
+    {{/if}}
+
+    {{else}}
+        <a href="/login" id="qsLoginBtn">
+            <h1> 
+            Login 
+            </h1>
+        </a>
+        
+	{{{ body }}}
+        
+	</body>
+</html>
