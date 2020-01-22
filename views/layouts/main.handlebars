@@ -15,30 +15,16 @@
             <h1>Home</h1>
         </a>
 
-    {{#if locals.user}}
-        <a href="/user" id="profileDropDown">
-            <h1> 
-             Profile
-            </h1>
-        </a>
-
-    <br>
-
-        <a href="/logout" id="qsLogoutBtn">
-            <h1> 
-            Logout
-            </h1>
-        </a>
-    {{/if}}
-
-    {{else}}
-        <a href="/login" id="qsLoginBtn">
+	
+   
+     <a href="/login" id="qsLoginBtn">
             <h1> 
             Login 
             </h1>
         </a>
-        
-	{{{ body }}}
-        
+         
+
+         <p> WE NEED TO INCLUDE A HANDLEBARS CASE WITH AN IF STATMENT TO GENERATE THE LOGIN/LOGIN BASED ON USER AUTH</p>
+        {{{ body }}} 
 	</body>
 </html>

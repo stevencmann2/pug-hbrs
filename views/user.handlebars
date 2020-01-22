@@ -1,3 +1,13 @@
+<div>
+
+  <a href="/logout" id="qsLogoutBtn">
+            <h1> 
+            Logout
+            </h1>
+        </a>
+    
+
+</div>
 
     <h1> Welcome {{user.nickname}}</h1> 
     <img src="{{user.picture}}">
@@ -8,3 +18,9 @@
       {{userProfile}}
 
       </div>
+
+
+
+     {{#if res.locals.user}}
+    <h1>TEst ing</h1>
+    {{/if}}
